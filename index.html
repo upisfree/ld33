@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base href="./ld33">
+    
+    <meta name="author" content="upisfree">
+    <meta name="copyright" content="upisfree">
+    <meta http-equiv="Pragma" content="cache">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+
+    <link href="http://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="animate.css">
+
+    <title>ld33</title>
+
+    <style>
+body
+{
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+canvas
+{
+  z-index: 10;
+}
+
+img
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+div
+{
+  position: absolute;
+  bottom: 2%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+h1
+{
+  display: inline-block;
+  font-size: 32px;
+  font-family: 'Noto Serif', serif;
+  font-weight: 900;
+  color: #fff;
+  background: #000;
+  padding: 10px;
+  z-index: 20;
+}
+
+#tip
+{
+  display: inline-block;
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  font-size: 18px;
+  font-family: 'Noto Serif', serif;
+  color: #ccc;
+}
+
+#count
+{
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-size: 28px;
+  padding: 4px;
+  font-family: 'Noto Serif', serif;
+  color: #fff;
+  background: #000;
+}
+
+.no
+{
+  display: none;
+}
+    </style>
+  </head>
+  <body>
+    <audio src="./assets/noise.mp3" autoplay loop preload></audio>
+
+    <img id="title" class="animated fadeIn" src="assets/textures/title.png">
+    <img id="end" class="no" src="assets/textures/end.png">
+
+    <div>
+      <h1 id="text">—</h1>
+    </div>
+
+    <h2 id="count">0 / 8</h2>
+    <p id="tip">потерялся? жми r — вернёт на старт</p>
+
+    <script src="./lib/pixi.js"></script>
+    <script src="./lib/matter.js"></script>
+    
+    <script src="./build/ld33.js"></script>
+  </body>
+</html>
