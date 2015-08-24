@@ -85,7 +85,7 @@ window.onkeydown = (e) =>
 
           engine.render.spriteContainer.filters = [rgb, blur]
 
-          utils.changeText 'тебе гневно, мой странный друг?'
+          utils.changeText 'are you angry, my strange friend??'
         when 'envy'
           console.log 'envy'
           SIN = 'envy'
@@ -111,7 +111,7 @@ window.onkeydown = (e) =>
 
           engine.render.spriteContainer.filters = [blur]
 
-          utils.changeText 'из зависти в кресло он вжался и застонал'
+          utils.changeText 'you envy her, isn\'t it?'
         when 'gloom'
           console.log 'gloom'
           SIN = 'gloom'
@@ -139,7 +139,7 @@ window.onkeydown = (e) =>
 
           engine.render.spriteContainer.filters = [noise, gray]
 
-          utils.changeText 'уныные пронзило её сердце копьём милосердия'
+          utils.changeText 'gloom pierced her heart with a speart of mercy'
         when 'gluttony'
           console.log 'gluttony'
           SIN = 'gluttony'
@@ -166,7 +166,7 @@ window.onkeydown = (e) =>
 
           engine.render.spriteContainer.filters = [twist]
 
-          utils.changeText 'чреву угодны мы иногда'
+          utils.changeText 'stomach pleasing we sometimes'
         when 'greed'
           console.log 'greed'
           SIN = 'greed'
@@ -192,7 +192,7 @@ window.onkeydown = (e) =>
 
           engine.render.spriteContainer.filters = [sepia]
 
-          utils.changeText 'алчность утопила его с золотыми карманами'
+          utils.changeText 'greed has drowned it with gold pockets'
         when 'lust'
           console.log 'lust'
           SIN = 'lust'
@@ -218,7 +218,7 @@ window.onkeydown = (e) =>
 
           engine.render.spriteContainer.filters = [pixel]
 
-          utils.changeText 'похоти не было предела, а конец был страшен'
+          utils.changeText 'lust was boundless and the end was terrible'
         when 'pride'
           console.log 'pride'
           SIN = 'pride'
@@ -243,7 +243,7 @@ window.onkeydown = (e) =>
 
           engine.render.spriteContainer.filters = [cross]
 
-          utils.changeText 'гордыня заслонила ему воздух'
+          utils.changeText 'pride replaced him air'
         when 'sloth'
           console.log 'sloth'
           SIN = 'sloth'
@@ -268,7 +268,7 @@ window.onkeydown = (e) =>
 
           engine.render.spriteContainer.filters = [invert]
 
-          utils.changeText 'в лени растворился'
+          utils.changeText 'in sloth has dissolved'
         when 'player'
           console.log 'player'
 
@@ -285,6 +285,6 @@ window.onkeydown = (e) =>
   # tick
   Matter.Events.on engine, 'tick', (e) ->
     time += 0.01
-#7:30
+
     # Camera
     Matter.Bounds.shift engine.render.bounds, { x: player.body.position.x - window.w / 2, y: player.body.position.y - window.h / 2 }
