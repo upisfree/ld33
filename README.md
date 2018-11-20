@@ -1,2 +1,2 @@
 # ld33
-Game for Ludun Dare #33
+Game for Ludum Dare #33
